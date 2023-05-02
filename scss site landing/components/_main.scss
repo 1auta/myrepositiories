@@ -1,0 +1,49 @@
+.main {
+  //   max-width: 100%;
+  background-color: #000;
+  .container {
+    max-width: 1156px;
+    max-height: 636px;
+    background-color: #000;
+  }
+  .container__title {
+    max-width: 571px;
+    max-height: 194px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 66px;
+    line-height: 147.52%;
+  }
+  .container__subtitle {
+    max-width: 560px;
+    max-height: 99px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 162.52%;
+    opacity: 0.3;
+    margin: 36px 0px;
+  }
+  //   .container__poshta {
+  //     max-height: 74px;
+  //     max-width: 438px;
+  //   }
+  //   input#email {
+  //     width: 438px;
+  //     height: 74px;
+  //     background: #ffffff;
+  //     opacity: 0.1;
+  //     border-radius: 43px;
+  //   }
+  //   .input#email::placeholder {
+  //     color: #ffffff;
+  //   }
+  .container_block {
+    max-width: 443.51px;
+    max-height: 568.91px;
+  }
+  .container__photo {
+  }
+}
