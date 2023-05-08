@@ -83,7 +83,7 @@ h1 {
 .header__contact {
   display: block;
   border: 2px solid #fff;
-  padding: 5px;
+  margin: 14px 35px;
 }
 
 .main {
@@ -118,21 +118,26 @@ h1 {
   display: flex;
   width: 400px; /* Ширина поля с кнопкой */
   border: 1px solid #000; /* Параметры рамки */
-  min-height: 20px; /* Минимальная высота */
   border-radius: 45px;
-  background: #ffffff;
+  background: #2e2e2e;
   margin: 36px 0px 220px;
+  overflow: hidden;
 }
 .main .hero__search_input {
   border: none;
-  width: 338px;
+  width: 200px;
   height: 74px;
   vertical-align: middle;
   outline: none;
-  border: none;
-  background: #ffffff;
-  opacity: 0.1;
-  text-indent: 30px;
+  background: #2e2e2e;
+  text-indent: 10px;
+  overflow: hidden;
+  border-radius: 45px;
+  background: url(./mg/Vector.svg) 20px 20px no-repeat;
+}
+.main .hero__search_vektor {
+  margin: 28px 9px 8px 28px;
+  opacity: 0.3;
 }
 .main .hero__search_button {
   display: block;
@@ -273,9 +278,6 @@ h1 {
 .main .achivement__card__two, .main .achivement__card__thre {
   border: 1.4px solid rgba(255, 255, 255, 0.1);
   border-radius: 14px;
-}
-.main .achivement__card__two {
-  background: #2e2e2e;
 }
 .main .achivement__card__two-title, .main .achivement__card__thre-title {
   width: 235px;
