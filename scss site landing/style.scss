@@ -27,6 +27,13 @@ a {
 ul {
   padding: 0;
 }
+h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 143.02%;
+}
 
 @import "./components/header";
 @import "./components/main";
