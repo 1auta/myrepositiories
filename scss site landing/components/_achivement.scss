@@ -1,0 +1,90 @@
+.achivement {
+  background: #1d1d1d;
+
+  &__container {
+  }
+  h1 {
+    margin: 0px 0px 97px 0px;
+  }
+  &__content {
+    width: 1139px;
+    height: 730px;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 359px;
+    height: 377px;
+    width: 359px;
+    height: 377px;
+    background: #1d1d1d;
+    border: 1.4px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+  }
+  &__card {
+  }
+
+  &__card_one-back {
+    background: #ffffff;
+    border-radius: 50px;
+    width: 101px;
+    height: 101px;
+    margin: 28px 234px 28px 24px;
+  }
+  &__card_one-icon {
+    margin: 24px 24px 24px 24px;
+  }
+
+  &__card_one-title {
+    width: 215px;
+    height: 24px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    margin: 28px;
+  }
+
+  &__card_one-text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 162.52%;
+    width: 293px;
+    height: 69px;
+    opacity: 0.3;
+    margin-left: 26px;
+  }
+  &__card_one-button {
+    width: 121px;
+    height: 43px;
+    background: #e3b748;
+    border-radius: 23.5px;
+    border: 0;
+    margin: 22px 215px 36px 23px;
+  }
+  //   &__card_two,
+  //   &__card_thre {
+  //     border: 1.4px solid rgba(255, 255, 255, 0.1);
+  //     border-radius: 14px;
+  //   }
+  //   // &__card__two {
+  //   //   background: #2e2e2e;
+  //   // }
+
+  //   &__card_two-title,
+  //   &__card_thre-title {
+  //     width: 235px;
+  //     height: 23px;
+  //     font-family: "Inter";
+  //     font-style: normal;
+  //     font-weight: 600;
+  //     font-size: 24px;
+  //     line-height: 24px;
+  //     margin: 0px 121px 26px 23px;
+  //   }
+}

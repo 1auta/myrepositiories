@@ -55,6 +55,7 @@ ul {
 }
 
 h1 {
+  text-align: center;
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
@@ -83,7 +84,12 @@ h1 {
 .header__contact {
   display: block;
   border: 2px solid #fff;
-  margin: 14px 35px;
+  padding: 14px 55px;
+  transition: all ease 0.4s;
+}
+.header__contact:hover {
+  color: #000;
+  background: #fff;
 }
 
 .main {
@@ -133,7 +139,6 @@ h1 {
   text-indent: 10px;
   overflow: hidden;
   border-radius: 45px;
-  background: url(./mg/Vector.svg) 20px 20px no-repeat;
 }
 .main .hero__search_vektor {
   margin: 28px 9px 8px 28px;
@@ -158,29 +163,29 @@ h1 {
 }
 .main .hero__picture {
   position: absolute;
-  margin-top: 83px;
-  right: 200.17px;
-  max-width: 467.71px;
-  max-height: 544.71px;
+  margin: 83px 200px 0px 665px;
+  width: 467.71px;
+  max-height: 540px;
   background: #e3b748;
 }
 .main .hero__photo {
   width: 463.51px;
   height: 509.91px;
 }
-.main .info {
+
+.info {
   background: #1d1d1d;
 }
-.main .info__content {
+.info__content {
   display: flex;
   width: 1132px;
   height: 548px;
 }
-.main .info__text {
+.info__text {
   display: flex;
   margin-top: 172px;
 }
-.main .info__text-item {
+.info__text_item {
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
@@ -189,14 +194,14 @@ h1 {
   width: 387px;
   height: 174px;
 }
-.main .info__line {
+.info__line {
   margin: 106px 87px 0px 83px;
   width: 206px;
   height: 0px;
   border: 1px solid #6a6a6a;
   transform: rotate(90deg);
 }
-.main .info__title {
+.info__title {
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
@@ -206,7 +211,7 @@ h1 {
   height: 52px;
   margin-bottom: 16px;
 }
-.main .info__subtitle {
+.info__subtitle {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -217,36 +222,40 @@ h1 {
   width: 475px;
   height: 87px;
 }
-.main .achivement {
+
+.achivement {
   background: #1d1d1d;
 }
-.main .achivement h1 {
+.achivement h1 {
   margin: 0px 0px 97px 0px;
-  display: block;
-  text-align: center;
 }
-.main .achivement__card {
+.achivement__content {
+  width: 1139px;
+  height: 730px;
+}
+.achivement__cards {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 359px;
+  height: 377px;
   width: 359px;
   height: 377px;
   background: #1d1d1d;
   border: 1.4px solid rgba(255, 255, 255, 0.1);
   border-radius: 14px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
 }
-.main .achivement__card__one-back {
+.achivement__card_one-back {
   background: #ffffff;
-  border: 1.4px solid rgba(25, 25, 25, 0.1);
   border-radius: 50px;
   width: 101px;
   height: 101px;
   margin: 28px 234px 28px 24px;
 }
-.main .achivement__card__one-icon {
-  margin: 25px 24px 25px 24px;
+.achivement__card_one-icon {
+  margin: 24px 24px 24px 24px;
 }
-.main .achivement__card__one-title {
+.achivement__card_one-title {
   width: 215px;
   height: 24px;
   font-family: "Inter";
@@ -254,9 +263,9 @@ h1 {
   font-weight: 600;
   font-size: 24px;
   line-height: 24px;
-  margin: 0px 121px 26px 23px;
+  margin: 28px;
 }
-.main .achivement__card__one-text {
+.achivement__card_one-text {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -267,7 +276,7 @@ h1 {
   opacity: 0.3;
   margin-left: 26px;
 }
-.main .achivement__card__one-button {
+.achivement__card_one-button {
   width: 121px;
   height: 43px;
   background: #e3b748;
@@ -275,17 +284,38 @@ h1 {
   border: 0;
   margin: 22px 215px 36px 23px;
 }
-.main .achivement__card__two, .main .achivement__card__thre {
-  border: 1.4px solid rgba(255, 255, 255, 0.1);
-  border-radius: 14px;
+
+.pictures {
+  background: #2e2e2e;
 }
-.main .achivement__card__two-title, .main .achivement__card__thre-title {
-  width: 235px;
-  height: 23px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 24px;
-  margin: 0px 121px 26px 23px;
+.pictures h1 {
+  margin: 0px 0px 97px 0px;
+}
+.pictures__content_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+.pictures .pictures__content_grid-item1 {
+  grid-area: 1/1/2/3;
+}
+.pictures .pictures__content_grid-item2 {
+  grid-area: 1/3/2/4;
+}
+.pictures .pictures__content_grid-item3 {
+  grid-area: 2/1/3/2;
+}
+.pictures .pictures__content_grid-item4 {
+  grid-area: 2/2/3/4;
+}
+.pictures .pictures__content_grid-item5 {
+  grid-area: 3/1/4/3;
+}
+.pictures .pictures__content_grid-item6 {
+  grid-area: 3/3/4/4;
+}
+.pictures .photos {
+  border-radius: 20px;
 }/*# sourceMappingURL=style.css.map */

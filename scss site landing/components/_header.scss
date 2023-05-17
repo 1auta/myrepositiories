@@ -20,11 +20,16 @@
   }
   &__list {
   }
-  &__list-item {
+  &__list_item {
   }
   &__contact {
     display: block;
     border: 2px solid #fff;
-    margin: 14px 35px;
+    padding: 14px 55px;
+    transition: all ease 0.4s;
+    &:hover {
+      color: #000;
+      background: #fff;
+    }
   }
 }
