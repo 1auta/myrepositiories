@@ -19,14 +19,10 @@
     justify-content: space-around;
   }
   &__list {
-  }
-  &__list_item {
-  }
-  &__list_icon {
     display: flex;
-    gap: 1.4375rem;
+    gap: 41px;
   }
-  &__list-icon{
+  &__link {
   }
   &__contact {
     display: block;
@@ -38,27 +34,107 @@
       background: #fff;
     }
   }
-  &__footer_text {
-    display: flex;
-    justify-content: center;
+  &__burger {
+    display: none;
   }
-  h5{
-    margin-left: 25px;
-    margin-top: 6.5rem;
-  }
-}
-@media (max-width: 767px) {
-  .header__content {
-    flex-direction: column;
-    align-items: center;
-  }
+  @media (max-width: 768px) {
+    body.lock {
+      overflow: hidden;
+    }
+    &__navbar {
+      display: block;
+      position: fixed;
+      background: #000;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      right: -100%;
+      padding: 15px;
+      padding-top: 90px;
+      transition: all 0.4s ease;
+    }
+    &__navbar.active {
+      right: 0;
+    }
+    &__list {
+      display: block;
+      position: relative;
+      z-index: 10;
+      text-align: center;
+      & li {
+        position: relative;
+        margin-bottom: 35px;
+        font-size: 35px;
+        &:hover {
+          text-decoration: underline;
+        }
+        & a {
+          display: inline-block;
+          position: relative;
+        }
+        & a::after {
+          content: "";
+          position: absolute;
+          bottom: -3px;
+          left: 0;
+          height: 2px;
+          width: 100%;
+          background: #e3b748;
+          transition: all ease 0.4s;
+          transform: scale(0);
+        }
+        & :hover a::after {
+          transform: scale(1);
+        }
+      }
+    }
+    &__contact {
+      display: none;
+      // position: relative;
+      // z-index: 20;
+    }
+    &__burger {
+      position: relative;
+      display: block;
+      height: 20px;
+      width: 30px;
+      & span {
+        position: absolute;
+        display: block;
+        border-radius: 20px;
+        height: 2px;
+        width: 100%;
+        background: #fff;
+        left: 0;
+        top: 9px;
+      }
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+      }
 
-  .header__navbar {
-    flex-direction: column;
-    margin-top: 20px;
-  }
-
-  .header__list {
-    margin-bottom: 10px;
+      &::before {
+        top: 0;
+      }
+      &::after {
+        bottom: 0;
+      }
+      &.active span {
+        transform: scale(0);
+      }
+      &.active::before {
+        transform: rotate(45deg);
+        top: 9px;
+      }
+      &.active::after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+      }
+    }
   }
 }
