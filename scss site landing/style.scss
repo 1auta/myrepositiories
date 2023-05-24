@@ -14,11 +14,10 @@
 }
 $mainColor: #e3b748;
 body {
-  background: #1d1d1d;
   color: white;
-  font-family: Inter;
+  font-family: "Inter";
   font-weight: 600;
-  font-size: 16;
+  font-size: 16px;
 }
 ul li,
 a {
@@ -34,6 +33,7 @@ h1 {
   font-weight: 600;
   font-size: 54px;
   line-height: 143.02%;
+  cursor: default;
 }
 
 @import "./components/header";
@@ -41,4 +41,7 @@ h1 {
 @import "./components/info";
 @import "./components/achivement";
 @import "./components/pictures";
-@import "./components/cards";
+@import "./components/sliderHappyClient";
+@import "./components/ourTeams";
+@import "./components/faq";
+@import "./components/newsLetters";

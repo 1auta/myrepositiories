@@ -1,0 +1,73 @@
+.faq {
+  &__container {
+    height: 52.75rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__container_item {
+    display: flex;
+    flex-direction: row;
+  }
+  &__text {
+    flex: 1;
+    width: 450px;
+  }
+  h1 {
+    width: 106px;
+    height: 75px;
+    margin: 0;
+    font-size: 54px;
+    line-height: 138.02%;
+    margin-bottom: 14px;
+  }
+  &__subtitle {
+    width: 400px;
+    height: 58px;
+    opacity: 0.3;
+  }
+  &__report {
+    flex: 1;
+  }
+  &__report_text {
+  }
+  h2 {
+    margin-top: 89px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+  &__report_subtitle {
+    width: 400px;
+    opacity: 0.3;
+  }
+  &__report_line {
+    width: 539px;
+    height: 0px;
+    background: #d9d9d9;
+    opacity: 0.05;
+    border: 2px solid #ffffff;
+    margin: 39px 0px;
+  }
+
+  &__report_question {
+    width: 539px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  h3 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  &__report_button {
+    border-radius: 50%;
+    background: #e3b748;
+    border: 0;
+    height: 20px;
+    transition: transform 0.3s ease;
+  }
+  .faq__report_button.active {
+    transform: rotate(
+      45deg
+    ); 
+  }
+}

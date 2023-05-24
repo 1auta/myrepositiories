@@ -22,6 +22,12 @@
   }
   &__list_item {
   }
+  &__list_icon {
+    display: flex;
+    gap: 1.4375rem;
+  }
+  &__list-icon{
+  }
   &__contact {
     display: block;
     border: 2px solid #fff;
@@ -31,5 +37,28 @@
       color: #000;
       background: #fff;
     }
+  }
+  &__footer_text {
+    display: flex;
+    justify-content: center;
+  }
+  h5{
+    margin-left: 25px;
+    margin-top: 6.5rem;
+  }
+}
+@media (max-width: 767px) {
+  .header__content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__navbar {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .header__list {
+    margin-bottom: 10px;
   }
 }

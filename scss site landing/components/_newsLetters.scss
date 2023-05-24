@@ -1,0 +1,45 @@
+.newsLetters {
+  height: 37.375rem;
+  &__container {
+    width: 77.8125rem;
+    height: 22.25rem;
+    background: rgba(71, 71, 71, 0.5);
+    font-family: "Helvetica Now Display";
+    padding-top: 10px;
+  }
+
+  &__content {
+  }
+  h3 {
+    text-align: center;
+    font-size: 55px;
+    line-height: 137%;
+  }
+  &__content_item {
+    text-align: center;
+  }
+  &__imput {
+    font-family: "Helvetica Now Display";
+    font-size: 14px;
+    line-height: 137%;
+    width: 276px;
+    height: 53px;
+    background: #e4e4e4;
+    border: 0;
+    padding: 9px;
+    outline: 0;
+  }
+  .imput_first {
+    border-radius: 8px 0px 0px 8px;
+  }
+  .imput__second {
+  }
+  &__buttons {
+    font-family: "Helvetica Now Display";
+    width: 116px;
+    height: 53px;
+    border: 0;
+    background: #e3b748;
+    border-radius: 0px 8px 8px 0px;
+  }
+}

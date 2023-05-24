@@ -1,7 +1,7 @@
 .main {
   max-width: 100%;
-  background-color: #000;
   .hero {
+    background: #000;
     &__content {
       display: flex;
     }
@@ -31,22 +31,23 @@
 
     &__search {
       display: flex;
-      width: 400px; /* Ширина поля с кнопкой */
-      border: 1px solid #000; /* Параметры рамки */
+      width: 400px;
+      border: 1px solid #000;
       border-radius: 45px;
       background: #2e2e2e;
       margin: 36px 0px 220px;
-      overflow: hidden;
     }
 
     &__search_input {
+      font-size: 16px;
+      color: #e3b748;
+      opacity: 50%;
       border: none;
       width: 200px;
       height: 74px;
       vertical-align: middle;
       outline: none;
       background: #2e2e2e;
-      text-indent: 10px;
       overflow: hidden;
       border-radius: 45px;
     }
@@ -62,6 +63,7 @@
       border: none;
       background: #e3b748;
       margin: 6px 6px 0px 0px;
+      cursor: pointer;
     }
     &__button-text {
       font-family: "Inter";
@@ -77,10 +79,17 @@
       width: 467.71px;
       max-height: 540px;
       background: #e3b748;
+      border-radius: 10%;
+      margin-right: 10px;
+      transition: background-color 0.3s, transform 0.3s;
     }
     &__photo {
       width: 463.51px;
       height: 509.91px;
     }
+    &__picture:hover {
+      transform: scale(1.1);
+    }
   }
 }
+
