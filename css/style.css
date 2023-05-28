@@ -661,9 +661,12 @@ h1 {
   padding: 5px 10px;
   margin-bottom: 10px;
 }
+.slider__button:hover {
+  background: #e3b748;
+  transition: transform 0.5s;
+}
 .slider .button__yellow {
   margin-left: 1.125rem;
-  background: #e3b748;
 }
 .slider__container_item {
   width: 1000px;
