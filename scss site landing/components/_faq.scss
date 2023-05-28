@@ -66,8 +66,35 @@
     transition: transform 0.3s ease;
   }
   .faq__report_button.active {
-    transform: rotate(
-      45deg
-    ); 
+    transform: rotate(45deg);
+  }
+  @media (max-width: 468px) {
+    .faq__container {
+      height: 500px;
+    }
+    .faq__text {
+      display: none;
+    }
+    h2 {
+      align-items: center;
+      text-align: center;
+      width: 300px;
+      margin-top: 0px;
+      font-size: 30px;
+      margin-bottom: 0;
+      line-height: 122.52%;
+    }
+    .faq__report_subtitle {
+      display: none;
+    }
+    &__report_line {
+      width: 380px;
+      margin: 10px 0px;
+    }
+    &__report_question {
+      display: flex;
+// justify-content: center
+;      width: 380px;
+    }
   }
 }

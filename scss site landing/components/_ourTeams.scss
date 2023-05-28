@@ -56,4 +56,15 @@
     background: #e3b748;
     border-radius: 14px;
   }
+  @media (max-width: 468px) {
+    height: 900px;
+    h1{
+      margin-bottom: 50px;
+    }
+    .team__row {
+      display: flex;
+       gap: 0px;
+       margin: 0 auto;
+    }
+  }
 }

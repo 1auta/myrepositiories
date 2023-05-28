@@ -42,4 +42,31 @@
     background: #e3b748;
     border-radius: 0px 8px 8px 0px;
   }
+  @media (max-width: 468px) {
+    height: 400px;
+    &__container {
+      width: 300px;
+      margin: 0 auto;
+      h3 {
+        font-size: 30px;
+      }
+    }
+    &__content_item {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .imput_first {
+      border-radius: 8px;
+    }
+    .imput__second {
+    }
+    &__imput {
+      border-radius: 8px;
+    }
+    &__buttons{
+      border-radius: 8px;
+
+    }
+  }
 }

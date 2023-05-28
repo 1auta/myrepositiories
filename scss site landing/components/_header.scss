@@ -37,7 +37,10 @@
   &__burger {
     display: none;
   }
-  @media (max-width: 768px) {
+  &__list_icon{
+    
+  }
+  @media (max-width: 768px), (max-width: 468px) {
     body.lock {
       overflow: hidden;
     }
@@ -136,5 +139,7 @@
         bottom: 9px;
       }
     }
+  }
+  @media (max-width: 468px) {
   }
 }

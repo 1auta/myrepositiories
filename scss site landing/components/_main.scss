@@ -1,95 +1,146 @@
 .main {
   max-width: 100%;
-  .hero {
-    background: #000;
-    &__content {
-      display: flex;
-    }
-    &__text {
-    }
-    &__title {
-      max-width: 571px;
-      max-height: 194px;
-      font-family: "Inter";
-      font-style: normal;
-      margin-top: 161px;
-      font-weight: 500;
-      font-size: 66px;
-      line-height: 147.52%;
-    }
-    &__subtitle {
-      width: 560px;
-      height: 99px;
-      font-family: "Inter";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 162.52%;
-      opacity: 0.3;
-      margin: 36px 0px;
-    }
-
-    &__search {
-      display: flex;
-      width: 400px;
-      border: 1px solid #000;
-      border-radius: 45px;
-      background: #2e2e2e;
-      margin: 36px 0px 220px;
-    }
-
-    &__search_input {
-      font-size: 16px;
-      color: #e3b748;
-      opacity: 50%;
-      border: none;
-      width: 200px;
-      height: 74px;
-      vertical-align: middle;
-      outline: none;
-      background: #2e2e2e;
-      overflow: hidden;
-      border-radius: 45px;
-    }
-    &__search_vektor {
-      margin: 28px 9px 8px 28px;
-      opacity: 0.3;
-    }
-    &__search_button {
-      display: block;
-      border-radius: 43px;
-      width: 137px;
-      height: 62px;
-      border: none;
-      background: #e3b748;
-      margin: 6px 6px 0px 0px;
-      cursor: pointer;
-    }
-    &__button-text {
-      font-family: "Inter";
-      font-style: normal;
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 162.52%;
-      color: #000;
-    }
-    &__picture {
-      position: absolute;
-      margin: 83px 200px 0px 665px;
-      width: 467.71px;
-      max-height: 540px;
-      background: #e3b748;
-      border-radius: 10%;
-      margin-right: 10px;
-      transition: background-color 0.3s, transform 0.3s;
-    }
-    &__photo {
-      width: 463.51px;
-      height: 509.91px;
-    }
-    &__picture:hover {
-      transform: scale(1.1);
-    }
-  }
 }
 
+.hero {
+  background: #000;
+  height: 800px;
+}
+
+.hero__content {
+  display: flex;
+}
+
+.hero__text {
+}
+
+.hero__title {
+  max-width: 571px;
+  max-height: 194px;
+  font-family: "Inter";
+  font-style: normal;
+  margin-top: 161px;
+  font-weight: 500;
+  font-size: 66px;
+  line-height: 147.52%;
+}
+
+.hero__subtitle {
+  width: 560px;
+  height: 99px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 162.52%;
+  opacity: 0.3;
+  margin: 36px 0px;
+}
+
+.hero__search {
+  display: flex;
+  width: 400px;
+  border: 1px solid #000;
+  border-radius: 45px;
+  background: #2e2e2e;
+  margin: 36px 0px 220px;
+}
+
+.hero__search_input {
+  font-size: 16px;
+  color: #e3b748;
+  opacity: 50%;
+  border: none;
+  width: 200px;
+  height: 74px;
+  vertical-align: middle;
+  outline: none;
+  background: #2e2e2e;
+  overflow: hidden;
+  border-radius: 45px;
+}
+
+.hero__search_vektor {
+  margin: 28px 9px 8px 28px;
+  opacity: 0.3;
+}
+
+.hero__search_button {
+  display: block;
+  border-radius: 43px;
+  width: 137px;
+  height: 62px;
+  border: none;
+  background: #e3b748;
+  margin: 6px 6px 0px 0px;
+  cursor: pointer;
+}
+
+.hero__button-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 162.52%;
+  color: #000;
+}
+
+.hero__picture {
+  position: absolute;
+  margin: 83px 200px 0px 665px;
+  width: 467.71px;
+  max-height: 530px;
+  background: #e3b748;
+  border-radius: 10%;
+  margin-right: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero__photo {
+  width: 463.51px;
+  height: 509.91px;
+}
+
+.hero__picture:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 768px) {
+  .hero__picture {
+    display: none;
+  }
+  .hero__title {
+    width: 500px;
+    font-size: 45px;
+  }
+  .hero__subtitle {
+    width: 450px;
+  }
+}
+@media (max-width: 480px) {
+  .hero {
+    height: 550px;
+  }
+  .hero__text {
+    height: 550px;
+  }
+  .hero__picture {
+    display: none;
+  }
+  .hero__title {
+    text-align: center;
+    width: 380px;
+    font-size: 40px;
+    margin-top: 20px;
+  }
+  .hero__subtitle {
+    height: 190px;
+    margin: 50px 0px 0px 0px;
+    width: 95%;
+    font-size: 20px;
+      text-align: justify;
+  }
+  .hero__search {
+    margin-top: 60px;
+    width: 90%;
+  }
+}

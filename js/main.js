@@ -1,3 +1,13 @@
+const burger = document.getElementById("burger");
+const navbar = document.getElementById("navbar");
+const body = document.querySelector(".body");
+
+burger.addEventListener("click", (e) => {
+  burger.classList.toggle("active");
+  navbar.classList.toggle("active");
+  body.classList.toggle("lock");
+});
+
 const prevButton = document.querySelector(".slider__button.prev-button");
 const nextButton = document.querySelector(".slider__button.next-button");
 const slider = document.querySelector(".slider__container_item");
@@ -26,12 +36,14 @@ const slide = (direction) => {
 prevButton.addEventListener("click", () => slide("prev"));
 nextButton.addEventListener("click", () => slide("next"));
 
-document.addEventListener('DOMContentLoaded', function() {
-  let buttons = document.querySelectorAll('.faq__report_button');
+document.addEventListener("DOMContentLoaded", function () {
+  let buttons = document.querySelectorAll(".faq__report_button");
 
-  buttons.forEach(function(button) {
-    button.addEventListener('click', function() {
-      this.classList.toggle('active'); /* Додаємо/видаляємо клас "active" при натисканні */
+  buttons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      this.classList.toggle(
+        "active"
+      ); /* Додаємо/видаляємо клас "active" при натисканні */
     });
   });
 });

@@ -35,6 +35,20 @@ h1 {
   line-height: 143.02%;
   cursor: default;
 }
+.title{
+  font-family: Inter;
+font-size: 54px;
+font-weight: 600;
+line-height: 77px;
+letter-spacing: 0em;
+
+}
+@media (max-width: 468px) {
+  .title{
+font-size: 30px
+  }
+  
+}
 
 @import "./components/header";
 @import "./components/main";

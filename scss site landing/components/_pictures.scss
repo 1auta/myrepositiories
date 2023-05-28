@@ -71,4 +71,15 @@
   .item__text:focus:after {
     width: 100%;
   }
+  @media (max-width: 468px) {
+    height: 550px;
+    h1{
+      margin-bottom: 30px;
+      // font-size: 40px;
+    }
+    .item__text {
+      bottom: 1px;
+      font-size: 12px;
+    }
+  }
 }
