@@ -37,9 +37,21 @@
   &__burger {
     display: none;
   }
-  &__list_icon{
-    
+  &__list_icon {
+    display: flex;
+    gap: 1.4375rem;
   }
+  &__list-icon {
+  }
+  &__footer_text {
+    display: flex;
+    justify-content: center;
+  }
+  h5 {
+    margin-left: 25px;
+    margin-top: 3.125rem;
+  }
+
   @media (max-width: 768px), (max-width: 468px) {
     body.lock {
       overflow: hidden;

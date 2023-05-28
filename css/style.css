@@ -111,6 +111,18 @@ h1 {
 .header__burger {
   display: none;
 }
+.header__list_icon {
+  display: flex;
+  gap: 1.4375rem;
+}
+.header__footer_text {
+  display: flex;
+  justify-content: center;
+}
+.header h5 {
+  margin-left: 25px;
+  margin-top: 3.125rem;
+}
 @media (max-width: 768px), (max-width: 468px) {
   .header body.lock {
     overflow: hidden;
